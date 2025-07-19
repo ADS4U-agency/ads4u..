@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADS4U - Social Media Marketing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #1e0034, #4b0082);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(5px);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #d5aaff;
+    }
+
+    nav a {
+      color: #d5aaff;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      padding: 80px 60px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 100px;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1533750349088-cd871a92f312?fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 100px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e0d6f3;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(213, 170, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #d5aaff;
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      color: #e0d6f3;
+    }
+
+    .stats-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 15px rgba(213, 170, 255, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .stats-table th, .stats-table td {
+      padding: 20px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .stats-table th {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #d5aaff;
+    }
+
+    .chart-placeholder {
+      background: rgba(255, 255, 255, 0.07);
+      height: 300px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccc;
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.4);
+      margin-top: 100px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ADS4U</h1>
+    <nav>
+      <a href="#">Početna</a>
+      <a href="#usluge">Usluge</a>
+      <a href="#paketi">Paketi</a>
+      <a href="#klijenti">Klijenti</a>
+      <a href="#statistika">Statistika</a>
+      <a href="#grafikon">Grafikon</a>
+      <a href="#o-nama">O Nama</a>
+      <a href="#team">Tim</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Profesionalni Digitalni Marketing</h2>
+      <p>Specijalizovani za rast brendova kroz sadržaj, oglašavanje i dizajn.</p>
+    </section>
+
+    <section class="services" id="usluge">
+      <div class="service-card">
+        <h3>Objave & Story dizajn</h3>
+        <p>Kreiramo atraktivan sadržaj za Instagram, Facebook i TikTok.</p>
+      </div>
+      <div class="service-card">
+        <h3>Reels montaža</h3>
+        <p>Dinamični reelsovi koji privlače pažnju i prodaju.</p>
+      </div>
+      <div class="service-card">
+        <h3>Vođenje mreža</h3>
+        <p>Planiranje i zakazivanje sadržaja uz komunikaciju sa publikom.</p>
+      </div>
+      <div class="service-card">
+        <h3>Grafički dizajn</h3>
+        <p>Logo, brošure, baneri i svi vizuali za tvoj biznis.</p>
+      </div>
+      <div class="service-card">
+        <h3>Reklame</h3>
+        <p>Efikasne kampanje za društvene mreže i Google Ads.</p>
+      </div>
+      <div class="service-card">
+        <h3>Komplet paketi</h3>
+        <p>Vođenje + dizajn + oglašavanje po paketu.</p>
+      </div>
+    </section>
+
+    <section id="statistika">
+      <h2 style="text-align:center; color:#d5aaff; margin-bottom:30px;">Statistika Klijenata</h2>
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Klijent</th>
+            <th>Rast pratilaca</th>
+            <th>Konverzije</th>
+            <th>Budžet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr title="Salon lepote u Nišu">
+            <td>Beauty Salon Mia</td>
+            <td>+430%</td>
+            <td>+310%</td>
+            <td>300€</td>
+          </tr>
+          <tr title="E-commerce prodavnica tehnologije">
+            <td>TechGear Shop</td>
+            <td>+220%</td>
+            <td>+180%</td>
+            <td>600€</td>
+          </tr>
+          <tr title="Lični trener i fitnes program">
+            <td>Fitness Pro</td>
+            <td>+510%</td>
+            <td>+420%</td>
+            <td>1000€</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="grafikon">
+      <h2 style="text-align:center; color:#d5aaff; margin-bottom:20px;">Vizuelni Rast Performansi</h2>
+      <div class="chart-placeholder">📈 Ovde dolazi interaktivni grafikon</div>
+    </section>
+
+    <section id="paketi"><h2 style="color:#d5aaff">Paketi</h2><p>Opis svih paketa koje nudimo (Starter, Standard, Premium...)</p></section>
+    <section id="klijenti"><h2 style="color:#d5aaff">Naši Klijenti</h2><p>Lista brendova i firmi s kojima smo radili.</p></section>
+    <section id="o-nama"><h2 style="color:#d5aaff">O Nama</h2><p>Kratka priča o ADS4U i našem timu.</p></section>
+    <section id="team"><h2 style="color:#d5aaff">Tim</h2><p>Predstavnici i stručnjaci iz različitih oblasti marketinga.</p></section>
+    <section id="faq"><h2 style="color:#d5aaff">FAQ</h2><p>Najčešća pitanja i odgovori u vezi sa saradnjom.</p></section>
+  </main>
+
+  <footer id="kontakt">
+    &copy; 2025 ADS4U Agency. Sva prava zadržana. | Email: ads4u.agency00@gmail.com
+  </footer>
+</body>
+</html>
